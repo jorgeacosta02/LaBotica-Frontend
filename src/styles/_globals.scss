@@ -4,15 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
 
+
 // General variables
 
 // Colors
 
 
-// Yellow
-$main-color: rgb(255, 251, 13);
-$main-light-color: rgb(255, 253, 139);
-$main-dark-color: rgb(196, 193, 12);
 
 // Orange
 // $main-color: rgb(219, 113, 0);
@@ -23,13 +20,13 @@ $main-dark-color: rgb(196, 193, 12);
 // $main-dark-color: rgb(102, 0, 0);
 
 // Blue
-// $main-color: rgb(0, 68, 255);
-// $main-dark-color: rgb(14, 55, 169);
-// $main-light-color: rgb(90, 234, 71);
-// $main-light2-color: rgb(189, 221, 162);
-// $main-light3-color: rgb(215, 225, 210);
+$main-color: rgb(0, 68, 255);
+$main-dark-color: rgb(0, 80, 155);
 
 
+$main-light-color: rgb(90, 234, 71);
+$main-light2-color: rgb(189, 221, 162);
+$main-light3-color: rgb(215, 225, 210);
 $white-color: white;
 $dark-black-color: black;
 $light-black-color: rgb(33, 33, 33);
@@ -43,7 +40,7 @@ $primary-font: 'Roboto';
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 // Mobile variables
 $mobile-NavBar-height: 60px;
-$mobile-main-container-padding: 4vh 4vw;
+$mobile-main-container-padding: 2vh 2vw;
 $mobile-h1-font-size: max(#{38px}, #{6vw});
 $mobile-h1-font-weight: 700;
 $mobile-h2-font-size: max(#{30px}, #{5vw});
@@ -56,7 +53,7 @@ $mobile-h5-font-size: max(#{15px}, #{2.2vw});
 $mobile-h5-font-weight: 500;
 $mobile-h6-font-size: max(#{14px}, #{1.4vw});
 $mobile-h6-font-weight: 500;
-$mobile-p-font-size: max(#{14px}, #{.7vw});
+$mobile-p-font-size: max(#{12px}, #{.7vw});
 $mobile-p-font-weight: 400;
 
 

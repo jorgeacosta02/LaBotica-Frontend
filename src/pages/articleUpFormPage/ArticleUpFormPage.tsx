@@ -1,5 +1,6 @@
 import ArticleUpFormComp from "../../components/articleUpFormComp/ArticleUpFormComp"
 
+
 const ArticleUpFormPage = () => {
   return (
     <div>

@@ -1,21 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit"
 import menuReducer from '../slices/menuSlice'
-import langReducer from '../slices/langSlice'
+import moonReducer from '../slices/moonSlice'
 import messageReducer from '../slices/messageSlice'
-import userReducer from '../slices/userAuthSlice'
-import articleReducer from '../slices/articleSlice'
-import locationReducer from '../slices/locationSlice'
-import inquiryReducer from '../slices/inquirySlice'
-
 
 export const store = configureStore ({
   reducer: {
     menu: menuReducer,
-    lang: langReducer,
+    moon: moonReducer,
     message: messageReducer,
-    userReducer: userReducer,
-    article: articleReducer,
-    location: locationReducer,
-    inquiry: inquiryReducer,
   }
 })

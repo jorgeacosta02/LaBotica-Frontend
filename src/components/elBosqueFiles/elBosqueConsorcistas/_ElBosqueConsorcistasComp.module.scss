@@ -1,0 +1,28 @@
+@use '../../../styles/globals' as g;
+
+.mainContainer{
+    // position: relative;
+    padding: 12vh 5vw;
+    min-height: 100vh;
+    // background-color: g.$main-color;
+    .mainTitle{
+        text-align: center;
+        margin-bottom: 30px;
+        // background-color: rgb(110, 227, 242);
+        border: 1px solid g.$main-color;
+        border-radius: 7px;
+        padding: 5px 0;
+    }
+    .infoContainer{
+        .li{
+            margin-bottom: 15px;
+            .title{
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .liUser{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

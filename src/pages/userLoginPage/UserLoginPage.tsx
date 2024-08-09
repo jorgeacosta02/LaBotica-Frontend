@@ -1,10 +1,9 @@
 import UserLoginComp from "../../components/userLoginComp/UserLoginComp"
 
-
 const UserLoginPage = () => {
   return (
     <div>
-      <UserLoginComp/>
+      <UserLoginComp />
     </div>
   )
 }

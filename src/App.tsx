@@ -1,56 +1,46 @@
-import { Routes, Route } from 'react-router-dom';
-import CompanyPage from './pages/companyPage/companyPage';
-import ServicesPage from './pages/servicesPage/servicesPage';
-import EquipmentPage from './pages/equipmentPage/equipmentPage';
-import JobsPage from './pages/jobsPage/jobsPage';
-import ContactPage from './pages/contactPage/contactPage';
-import UserRegisterPage from './pages/userRegisterPage/UserRegisterPage';
-import IntranetPage from './pages/intranetPage/IntranetPage';
-import InvMovFormPage from './pages/invMovFormPage/InvMovFormPage';
-import ArticleUpFormPage from './pages/articleUpFormPage/ArticleUpFormPage';
-import LocationUpPage from './pages/locationUpPage/LocationUpPage';
-import InquiryPage from './pages/inquiryPage/InquiryPage';
-import UserLoginPage from './pages/userLoginPage/UserLoginPage';
-import UserRoutesComp from './components/protectedRoutes/userRoutesComp/UserRoutesComp';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/scrollToTopComp/ScrollToTopComp";
+import HomePage from "./pages/homePage/HomePage";
+import ContactPage from "./pages/contactPage/ContactPage";
+import AdminRoutesComp from "./components/protectedRoutes/adminRoutesComp/AdminRoutesComp";
+import IntranetPage from "./pages/intranetPage/IntranetPage";
+import ArticleUpFormPage from "./pages/articleUpFormPage/ArticleUpFormPage";
+import UserLoginPage from "./pages/userLoginPage/UserLoginPage";
+import ElBosquePage from "./pages/elBosquePage/ElBosquePage";
+import ElBosqueRoutesComp from "./components/protectedRoutes/elBosqueRoutesComp/ElBosqueRoutesComp";
+import ElBosqueReglamPage from "./pages/elBosqueReglamPage/ElBosqueReglamPage";
+import ElBosqueGenInfoPage from "./pages/elBosqueGenInfoPage/ElBosqueGenInfoPage";
+import ElBosqueConsorcistasPage from "./pages/elBosqueConsorcistasPage/ElBosqueConsorcistasPage";
+import ElBosqueAdminPage from "./pages/elBosqueAdminPage/ElBosqueAdminPage";
 
-
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div>
-      <Routes>
+    <>
+      <ScrollToTop />
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<UserLoginPage />} />
+          {/* Admin Routes */}
+          <Route element={<AdminRoutesComp />}>
+            <Route path="/intranet" element={<IntranetPage />} />
+            <Route path="/article-up-form" element={<ArticleUpFormPage />} />
+          </Route>
+          {/* El Bosque Routes */}
+          <Route element={<ElBosqueRoutesComp />}>
+            <Route path="/elbosque" element={<ElBosquePage />} />
+            <Route path="/elbosquereglam" element={<ElBosqueReglamPage />} />
+            <Route path="/elbosque-info-general" element={<ElBosqueGenInfoPage />} />
+            <Route path="/elbosque-consorcistas" element={<ElBosqueConsorcistasPage />} />
+            <Route path="/elbosque-admin" element={<ElBosqueAdminPage />} />
+          </Route>
+        </Routes>
+      </div>
+    </>
+  );
+};
 
-        {/*General Routes*/}
-        {/* <Route path="/" element={<LandingPage />} /> */}
+export default App;
 
-        {/*Register Routes*/}
-        <Route path='/tasks' element={<h1>tasks</h1>}/>
-        <Route path='/add-task' element={<h1>add-task</h1>}/>
-        <Route path='/task/:id' element={<h1>task/:id</h1>}/>
-        <Route path='/profile' element={<h1>profile</h1>}/>
-  
-        {/* Free Routes*/}
-        <Route path='/login' element={<UserLoginPage/>}/>
-        <Route path="/" element={<CompanyPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/equipment" element={<EquipmentPage />} />
-        <Route path="/jobs" element={<JobsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-
-        {/* Admin & user Routes*/}
-        <Route element={<UserRoutesComp/>}>
-          <Route path='/intranet' element={<IntranetPage/>} />
-        </Route>
-    
-        {/* Admin Routes*/}
-        <Route path='/inquiry' element={<InquiryPage/>}/>
-        <Route path='/location-up-form' element={<LocationUpPage/>} />
-        <Route path='/article-up-form' element={<ArticleUpFormPage/>} />
-        <Route path='/inventory-movement' element={<InvMovFormPage/>} />
-        <Route path='/register' element={<UserRegisterPage/>} />
-  
-      </Routes>
-    </div>
-  )
-}
-
-export default App

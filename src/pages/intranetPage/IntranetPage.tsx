@@ -1,4 +1,4 @@
-import IntranetComp from "../../components/intranet/IntranetComp"
+import IntranetComp from "../../components/intranetComp/IntranetComp"
 
 const IntranetPage = () => {
   return (

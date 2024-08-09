@@ -5,16 +5,25 @@
     box-sizing: border-box;
     position: fixed;
     width: 100vw;
-    height: max(#{g.$mobile-NavBar-height}, #{25px});
+    height: max(#{g.$mobile-NavBar-height}, #{20px});
+    min-height: 35px;
     top: 0;
     left: 0;
-    padding: 0 2vw;
+    padding: 0 3vw;
     margin: 0;
-    background-color: g.$white-color;
     @include g.create-flexbox(row, space-between);
     z-index: 1000;
-    border-bottom: 10px solid g.$main-color;
+    transition: 400ms;
+    // background-color: blue;
     @include g.display-large{
+        width: 100%;
         height: g.$desk-NavBar-height;
+        padding: 0 2vw;
     }
 }
+.backgDark {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    transition: 400ms;
+}
+

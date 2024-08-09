@@ -1,0 +1,32 @@
+@use "../../styles/globals" as g;
+
+.container {
+    box-sizing: border-box;
+    padding: 3px 10px;
+    max-width: 150px;
+    // background-color: green;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 3px;
+    color: g.$main-color;
+    @include g.create-flexbox(column,center);
+    height: 80%;
+    .brand {
+        font-size: 15px;
+    }
+    .comment{
+        font-size: 8px;
+    }
+    @include g.display-large{
+        max-width: 220px;
+        width: 40%;
+        height: 60%;
+        .brand {
+            font-size: 25px;
+            
+        }
+        .comment{
+            font-size: 12px;
+        }
+    }
+
+}

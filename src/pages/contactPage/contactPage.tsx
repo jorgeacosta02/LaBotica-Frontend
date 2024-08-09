@@ -1,12 +1,13 @@
-import NavBarLayout from '../../layouts/navBarLayout/navBarLayout'
-import ContactLayout from '../../layouts/contactLayout/contactLayout'
-import FooterComp from '../../components/footerComp/footerComp'
+import ContactComp from "../../components/contactComp/ContactComp"
+import FooterComp from "../../components/footerComp/FooterComp"
+import NavBarLayout from "../../layouts/navBarLayout/NavBarLayout"
+
 
 const ContactPage = () => {
   return (
     <div>
       <NavBarLayout/>
-      <ContactLayout/>
+      <ContactComp/>
       <FooterComp/>
     </div>
   )

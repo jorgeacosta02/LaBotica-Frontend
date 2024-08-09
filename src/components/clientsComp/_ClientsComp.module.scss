@@ -1,0 +1,63 @@
+@use '../../styles/globals' as g;
+
+.mainContainer{
+    position: relative;
+    box-sizing: border-box;
+    padding: 5vh 5vw;
+    z-index: 101;
+    min-height: 100vh;
+    background-color: white;
+    .mainTitle{
+        margin-bottom: 20px;
+    }.dataContainer{
+        width: 100%;
+        // background-color: red;
+        box-sizing: border-box;
+        padding: 2vh 2vw;
+        border-radius: 10px;
+        @include g.create-flexbox(row, space-evenly);
+        flex-wrap: wrap;
+        gap: 3vw;
+        .clientContainer{
+            box-sizing: border-box;
+            width: 19%;
+            width: 100px;
+            height: 140px;
+            overflow: hidden;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: rgba(0,0,0,.8);
+            color: white;
+            text-align: center;
+            transition: 200ms ease;
+            @include g.create-flexbox(column, center);
+            @include g.display-large{
+                width: 200px;
+            }
+            .clientLink{
+                box-sizing: border-box;
+                height: 100%;
+                width: 100%;
+                // background-color: green;
+                text-decoration: none;
+                color: inherit;
+                font-size: 10px;
+            }
+            .clientImg{
+                width: 100%;
+                border-radius: 2px;
+                margin-bottom: 5px;
+                @include g.display-large{
+                    width: 50%;
+                }
+            }
+        }
+        .clientContainer:hover{
+            box-shadow: 20px 20px 20px rgba(0,0,0,1);
+            transform:scale(1.05);
+            transform-origin: center;
+            background-color: black;
+            cursor: pointer;
+        }
+    }
+}
