@@ -239,7 +239,7 @@ const ContactComp: React.FC = () => {
         </div>
         <div className={styles.formContainer}>
           <h4 className={styles.formTitle}>
-            Envíame un mensaje
+            Formularo de contacto
           </h4>
           <form
             className={styles.form}

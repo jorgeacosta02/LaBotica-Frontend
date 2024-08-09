@@ -8,10 +8,10 @@ const NavBarLogoComp = () => {
     return (
         <div className={styles.container}>
           <h4 className={styles.brand}>
-            Jorge Acosta
+            La Botica
           </h4>
           <p className={styles.comment}>
-            Administración de Consorcios
+            Productos naturales
           </p>
         </div>
     );
