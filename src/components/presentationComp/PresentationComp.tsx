@@ -1,8 +1,8 @@
-import styles from './_HomeComp.module.scss'
+import styles from './_PresentationComp.module.scss'
 import SliderComp from '../sliderComp/SliderComp';
 
 
-const HomeComp = () => {
+const PresentationComp = () => {
   
   return (
     <div className={styles.mainContainer}>
@@ -23,4 +23,4 @@ const HomeComp = () => {
   );
 }
 
-export default HomeComp;
+export default PresentationComp;
