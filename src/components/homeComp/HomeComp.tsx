@@ -8,16 +8,16 @@ const HomeComp = () => {
     <div className={styles.mainContainer}>
       <SliderComp/>
       <div className={styles.dataContainer}>
-        <h5
+        <p
           className={styles.role}
         >
-          Servicio de administración de consorcios eficiente y transparente, entendiendo que la administración de un consorcio requiere una atención meticulosa y un enfoque personalizado.
-        </h5>
-        <h5
+          Bienvenidos a La Botica, tu tienda de confianza para el bienestar y la salud. Ofrecemos una amplia gama de productos de alta calidad, cuidadosamente seleccionados para satisfacer tus necesidades de salud y bienestar. Desde suplementos esenciales como el citrato de potasio y el citrato de magnesio hasta productos innovadores como la zeolita y el dióxido de cloro (CDS), en La Botica encontrarás todo lo necesario para cuidar de tu cuerpo de manera natural y efectiva.
+        </p>
+        <p
           className={styles.role}
         >
-          Toda la información de gestión actualizada y disponible de forma permanente para los miembros del consorcio.
-        </h5>
+          Explora nuestro catálogo y descubre cómo nuestros productos pueden transformar tu bienestar.
+        </p>
       </div>
     </div>
   );

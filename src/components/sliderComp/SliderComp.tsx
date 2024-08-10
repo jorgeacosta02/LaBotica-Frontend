@@ -26,7 +26,7 @@ const SliderComp = () => {
     useEffect(() => {
       const interval = setInterval(() => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % 5);
-      }, 7000); // Cambia a la siguiente imagen cada 3 segundos
+      }, 5000); // Cambia a la siguiente imagen cada 3 segundos
   
       return () => clearInterval(interval);
     }, []); // Se ejecuta solo una vez al montar el componente
@@ -46,19 +46,19 @@ const SliderComp = () => {
 
     return (
         <div>
-            <div className={styles.slider}>
-            {images.map((image, index) => (
+          <div className={styles.slider}>
+          {images.map((image, index) => (
             <div
-            className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
-                key={index}
-                >
-                <img
+              className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
+              key={index}
+            >
+              <img
                 src={image}
                 alt=""
                 className={styles.img}
-                />
+              />
             </div>
-            ))}
+          ))}
         </div>
         <div className={backColor}></div>
         </div>

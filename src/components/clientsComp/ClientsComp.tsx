@@ -6,7 +6,7 @@ const ClientsComp = () => {
   return (
     <div className={styles.mainContainer}>
       <h2 className={styles.mainTitle}>
-        Clientes
+        Catálogo
       </h2>
       <div className={styles.dataContainer}>
         <div className={styles.clientContainer}>
