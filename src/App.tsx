@@ -7,12 +7,7 @@ import AdminRoutesComp from "./components/protectedRoutes/adminRoutesComp/AdminR
 import IntranetPage from "./pages/intranetPage/IntranetPage";
 import ArticleUpFormPage from "./pages/articleUpFormPage/ArticleUpFormPage";
 import UserLoginPage from "./pages/userLoginPage/UserLoginPage";
-import ElBosquePage from "./pages/elBosquePage/ElBosquePage";
-import ElBosqueRoutesComp from "./components/protectedRoutes/elBosqueRoutesComp/ElBosqueRoutesComp";
-import ElBosqueReglamPage from "./pages/elBosqueReglamPage/ElBosqueReglamPage";
-import ElBosqueGenInfoPage from "./pages/elBosqueGenInfoPage/ElBosqueGenInfoPage";
-import ElBosqueConsorcistasPage from "./pages/elBosqueConsorcistasPage/ElBosqueConsorcistasPage";
-import ElBosqueAdminPage from "./pages/elBosqueAdminPage/ElBosqueAdminPage";
+
 
 const App: React.FC = () => {
   return (
@@ -27,14 +22,6 @@ const App: React.FC = () => {
           <Route element={<AdminRoutesComp />}>
             <Route path="/intranet" element={<IntranetPage />} />
             <Route path="/article-up-form" element={<ArticleUpFormPage />} />
-          </Route>
-          {/* El Bosque Routes */}
-          <Route element={<ElBosqueRoutesComp />}>
-            <Route path="/elbosque" element={<ElBosquePage />} />
-            <Route path="/elbosquereglam" element={<ElBosqueReglamPage />} />
-            <Route path="/elbosque-info-general" element={<ElBosqueGenInfoPage />} />
-            <Route path="/elbosque-consorcistas" element={<ElBosqueConsorcistasPage />} />
-            <Route path="/elbosque-admin" element={<ElBosqueAdminPage />} />
           </Route>
         </Routes>
       </div>

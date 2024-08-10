@@ -1,6 +1,6 @@
-import styles from './_ProductComp.module.scss';
+import styles from './_ArticleComp.module.scss';
 
-const ProductComp = () => {
+const ArticleComp = () => {
   return (
     <div className={styles.container}>
         <h1 className={styles.title}>
@@ -10,4 +10,4 @@ const ProductComp = () => {
   )
 }
 
-export default ProductComp
+export default ArticleComp
