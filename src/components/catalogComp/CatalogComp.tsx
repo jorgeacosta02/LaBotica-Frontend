@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom'
-import styles from './_ClientsComp.module.scss'
+import styles from './_CatalogComp.module.scss'
 import elbosque from '../../assets/images/links/Portal.jpg'
 
-const ClientsComp = () => {
+const CatalogComp = () => {
   return (
     <div className={styles.mainContainer}>
       <h2 className={styles.mainTitle}>
@@ -44,4 +44,4 @@ const ClientsComp = () => {
   )
 }
 
-export default ClientsComp
+export default CatalogComp

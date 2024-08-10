@@ -11,7 +11,7 @@ const HomeComp = () => {
         <p
           className={styles.role}
         >
-          Bienvenidos a La Botica, tu tienda de confianza para el bienestar y la salud. Ofrecemos una amplia gama de productos de alta calidad, cuidadosamente seleccionados para satisfacer tus necesidades de salud y bienestar. Desde suplementos esenciales como el citrato de potasio y el citrato de magnesio hasta productos innovadores como la zeolita y el dióxido de cloro (CDS), en La Botica encontrarás todo lo necesario para cuidar de tu cuerpo de manera natural y efectiva.
+          Bienvenidos a La Botica, tu tienda de confianza para el bienestar y la salud. Ofrecemos una amplia gama de productos de alta calidad, cuidadosamente seleccionados para satisfacer tus necesidades de salud y bienestar, desde suplementos esenciales como el citrato de potasio y el citrato de magnesio hasta productos innovadores como la zeolita y el dióxido de cloro (CDS), en La Botica encontrarás todo lo necesario para cuidar de tu cuerpo de manera natural y efectiva.
         </p>
         <p
           className={styles.role}
