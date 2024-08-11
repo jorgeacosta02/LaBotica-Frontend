@@ -6,6 +6,7 @@ export interface IArticleData {
     description: '',
     unit: '',
     price: '',
+    image: '',
 }
 
 
@@ -16,4 +17,5 @@ export interface IArticleFormDB {
     description: '',
     unit: '',
     price: '',
+    image: '',
 }
