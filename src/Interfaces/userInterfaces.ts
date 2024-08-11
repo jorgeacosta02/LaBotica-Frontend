@@ -41,7 +41,7 @@ export interface IUserRegisterData {
 
 // LOGIN
 export interface IUserLoginData {
-    dni: string;
+    email: string;
     password: string;
   }
 

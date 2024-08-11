@@ -18,13 +18,13 @@ const UserLoginComp = () => {
 
     // Estado de datos del formulario
     const [formData, setFormData] = useState<IUserLoginData>({
-        dni: '',
+        email: '',
         password: '',
     });
     
     // Estado de errores del formulario
     const [errors, setErrors] = useState<IUserLoginData>({
-        dni: '',
+        email: '',
         password: '',
     });
 
@@ -32,7 +32,7 @@ const UserLoginComp = () => {
     let submitOk = false;
   
     if(
-        formData.dni  !== '' &&
+        formData.email  !== '' &&
         formData.password  !== ''
     ){
         submitOk = true;
@@ -53,10 +53,10 @@ const UserLoginComp = () => {
     const emptyMessage = 'Este campo debe ser completado.'
  
     const emptyValidationHandler =()=>{
-        if(!formData.dni){
+        if(!formData.email){
         setErrors((prevData) => ({
             ...prevData,
-            dni: emptyMessage,
+            email: emptyMessage,
         }));
         };
         if(!formData.password){
@@ -95,7 +95,7 @@ const UserLoginComp = () => {
 
             // queryResponse = await response.status;
             setFormData({
-            dni: '',
+            email: '',
             password: '',
             })
 
@@ -130,23 +130,23 @@ const UserLoginComp = () => {
                     </h2>
                     <div className={styles.inputBlock}>
                     <label 
-                        htmlFor='dni'>
-                        'DNI'
+                        htmlFor='email'>
+                        'Correo Electrónico'
                     </label>
                     <input
                         type='text'
-                        id='dni'
-                        name='dni' 
-                        value={formData.dni}
+                        id='email'
+                        name='email' 
+                        value={formData.email}
                         onChange={handleInputChange} 
                         placeholder='Ingrese dni...'
                         // className={inputColor}
                     />
                     {
-                        errors.dni 
+                        errors.email 
                         && 
                         <p className={styles.errorMessage}>
-                        {errors.dni}
+                        {errors.email}
                         </p>
                     }
                     </div>
