@@ -54,18 +54,20 @@
             margin-left: 0;
             padding: 10px;
             @include g.create-flexbox(column, space-between);
-            // gap: 10px;
+            gap: 10px;
             .link{
+                border: 2px solid grey;
                 box-sizing: border-box;
                 display: inline-block;
-                width: 100%;
+                width: 50vw;
                 height: auto;
                 padding: 10px 10px;
                 text-decoration: none;
                 color: inherit;
                 border-radius: 5px;
                 text-align: center;
-                // background-color: red;
+                background-color: rgba(78, 255, 249, 0.989);
+                
             }
             .link:hover{
                 background-color: g.$main-color;
