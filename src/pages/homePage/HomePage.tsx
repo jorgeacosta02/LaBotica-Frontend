@@ -1,14 +1,14 @@
 import NavBarLayout from "../../layouts/navBarLayout/NavBarLayout"
 import PresentationComp from "../../components/presentationComp/PresentationComp"
 import FooterComp from "../../components/footerComp/FooterComp"
-import CatalogComp from "../../components/catalogComp/CatalogComp"
+import ArticleCardsComp from "../../components/articleCardsComp/ArticleCardsComp"
 
 const HomePage = () => {
   return (
     <div>
       <NavBarLayout/>
       <PresentationComp/>
-      <CatalogComp/>
+      <ArticleCardsComp/>
       <FooterComp/>
     </div>
   )

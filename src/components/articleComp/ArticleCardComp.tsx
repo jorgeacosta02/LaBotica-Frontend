@@ -1,4 +1,4 @@
-import styles from './_ArticleComp.module.scss';
+import styles from './_ArticleCardComp.module.scss';
 
 const ArticleComp = () => {
   return (

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import styles from './_CatalogComp.module.scss'
+import styles from './_ArticleCardsComp.module.scss'
 import elbosque from '../../assets/images/links/Portal.jpg'
 
 const CatalogComp = () => {
