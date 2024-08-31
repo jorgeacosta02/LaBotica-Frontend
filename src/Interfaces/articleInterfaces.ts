@@ -4,9 +4,8 @@
 export interface IArticleData {
     name: '',
     description: '',
-    unit: '',
+    size: '',
     price: '',
-    image: any,
 }
 
 
@@ -15,7 +14,6 @@ export interface IArticleFormDB {
     id: any;
     name: '',
     description: '',
-    unit: '',
+    size: '',
     price: '',
-    image: any,
 }
