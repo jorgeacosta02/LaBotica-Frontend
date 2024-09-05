@@ -23,7 +23,8 @@ const UserRegisterComp = () => {
     address: '',
     cp: '',
     city: '',
-    country: '',
+    province: '',
+    // country: '',
     password: '',
     role:'',
     // active: false,
@@ -39,7 +40,8 @@ const UserRegisterComp = () => {
     address: '',
     cp: '',
     city: '',
-    country: '',
+    province: '',
+    // country: '',
     password: '',
     role:'',
     // active: false,
@@ -54,6 +56,10 @@ const UserRegisterComp = () => {
     formData.dni  !== '' &&
     formData.phone  !== '' &&
     formData.email  !== '' &&
+    formData.address  !== '' &&
+    formData.cp  !== '' &&
+    formData.city  !== '' &&
+    formData.province  !== '' &&
     formData.password  !== '' &&
     formData.role !== '' 
     // formData.active !== false
@@ -212,7 +218,8 @@ const UserRegisterComp = () => {
         address: '',
         cp: '',
         city: '',
-        country: '',
+        province: '',
+        // country: '',
         password: '',
         role:'',
         // active: false,
@@ -413,6 +420,28 @@ const UserRegisterComp = () => {
           </div>
           <div className={styles.inputBlock}>
             <label 
+              htmlFor='province'>
+              Ciudad:
+            </label>
+            <input
+              type='text'
+              id='province'
+              name='province' 
+              value={formData.province}
+              onChange={handleInputChange} 
+              placeholder='Ingrese provincia...'
+              // className={inputColor}
+            />
+            {
+              errors.province 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.province}
+              </p>
+            }
+          </div>
+          {/* <div className={styles.inputBlock}>
+            <label 
               htmlFor='country'>
               País:
             </label>
@@ -432,7 +461,7 @@ const UserRegisterComp = () => {
                 {errors.country}
               </p>
             }
-          </div>
+          </div> */}
           <div className={styles.inputBlock}>
             <label 
               htmlFor='password'>
@@ -456,27 +485,27 @@ const UserRegisterComp = () => {
             }
           </div>
           <div className={styles.inputBlock}>
-              <label 
-                htmlFor='role'>
-                Rol:
-              </label>
-              <input
-                type='text'
-                id='role'
-                name='role' 
-                value={formData.role}
-                onChange={handleInputChange} 
-                placeholder='Ingrese rol...'
-                // className={inputColor}
-              />
-              {
-                errors.role 
-                && 
-                <p className={styles.errorMessage}>
-                  {errors.role}
-                </p>
-              }
-            </div>
+            <label 
+              htmlFor='role'>
+              Rol:
+            </label>
+            <input
+              type='text'
+              id='role'
+              name='role' 
+              value={formData.role}
+              onChange={handleInputChange} 
+              placeholder='Ingrese rol...'
+              // className={inputColor}
+            />
+            {
+              errors.role 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.role}
+              </p>
+            }
+          </div>
           {/* <div className={styles.inputBlock}>
               <label 
                 htmlFor='active'>

@@ -9,7 +9,8 @@ export interface IUserData {
     address: string;
     cp: string;
     city: string;
-    country: string;
+    province: string;
+    // country: string;
     password: string;
     // active: boolean;
     role: string;
@@ -26,7 +27,8 @@ export interface IUserDataFromDB {
     address: string;
     cp: string;
     city: string;
-    country: string;
+    province: string;
+    // country: string;
     password: string;
     // active: boolean;
     role: string;
@@ -42,7 +44,8 @@ export interface IUserRegisterData {
     address: string;
     cp: string;
     city: string;
-    country: string;
+    province: string;
+    // country: string;
     password: string;
     // active: boolean;
     role: string;
