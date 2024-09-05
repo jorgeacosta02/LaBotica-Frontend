@@ -20,6 +20,10 @@ const UserRegisterComp = () => {
     dni: '',
     phone: '',
     email: '',
+    address: '',
+    cp: '',
+    city: '',
+    country: '',
     password: '',
     role:'',
     // active: false,
@@ -32,6 +36,10 @@ const UserRegisterComp = () => {
     dni: '',
     phone: '',
     email: '',
+    address: '',
+    cp: '',
+    city: '',
+    country: '',
     password: '',
     role:'',
     // active: false,
@@ -201,6 +209,10 @@ const UserRegisterComp = () => {
         dni: '',
         phone: '',
         email: '',
+        address: '',
+        cp: '',
+        city: '',
+        country: '',
         password: '',
         role:'',
         // active: false,
@@ -224,115 +236,203 @@ const UserRegisterComp = () => {
             Registrar personal
           </h1>
           <div className={styles.inputBlock}>
-              <label 
-                htmlFor='firstName'>
-                Nombre:
-              </label>
-              <input
-                type='text'
-                id='firtsName'
-                name='firstName' 
-                value={formData.firstName}
-                onChange={handleInputChange} 
-                placeholder='Ingrese nombre...'
-                // className={inputColor}
-              />
-              {
-                errors.firstName 
-                && 
-                <p className={styles.errorMessage}>
-                  {errors.firstName}
-                </p>
-              }
-            </div>
+            <label 
+              htmlFor='firstName'>
+              Nombre:
+            </label>
+            <input
+              type='text'
+              id='firtsName'
+              name='firstName' 
+              value={formData.firstName}
+              onChange={handleInputChange} 
+              placeholder='Ingrese nombre...'
+              // className={inputColor}
+            />
+            {
+              errors.firstName 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.firstName}
+              </p>
+            }
+          </div>
           <div className={styles.inputBlock}>
-              <label 
-                htmlFor='lastName'>
-                Apellido:
-              </label>
-              <input
-                type='text'
-                id='lastName'
-                name='lastName' 
-                value={formData.lastName}
-                onChange={handleInputChange} 
-                placeholder='Ingrese apellido...'
-                // className={inputColor}
-              />
-              {
-                errors.lastName 
-                && 
-                <p className={styles.errorMessage}>
-                  {errors.lastName}
-                </p>
-              }
-            </div>
+            <label 
+              htmlFor='lastName'>
+              Apellido:
+            </label>
+            <input
+              type='text'
+              id='lastName'
+              name='lastName' 
+              value={formData.lastName}
+              onChange={handleInputChange} 
+              placeholder='Ingrese apellido...'
+              // className={inputColor}
+            />
+            {
+              errors.lastName 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.lastName}
+              </p>
+            }
+          </div>
           <div className={styles.inputBlock}>
-              <label 
-                htmlFor='dni'>
-                'DNI:'
-              </label>
-              <input
-                type='text'
-                id='dni'
-                name='dni' 
-                value={formData.dni}
-                onChange={handleInputChange} 
-                placeholder='Ingrese dni...'
-                // className={inputColor}
-              />
-              {
-                errors.dni 
-                && 
-                <p className={styles.errorMessage}>
-                  {errors.dni}
-                </p>
-              }
-            </div>
+            <label 
+              htmlFor='dni'>
+              'DNI:'
+            </label>
+            <input
+              type='text'
+              id='dni'
+              name='dni' 
+              value={formData.dni}
+              onChange={handleInputChange} 
+              placeholder='Ingrese dni...'
+              // className={inputColor}
+            />
+            {
+              errors.dni 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.dni}
+              </p>
+            }
+          </div>
           <div className={styles.inputBlock}>
-              <label 
-                htmlFor='phone'>
-                Teléfono:
-              </label>
-              <input
-                type='text'
-                id='phone'
-                name='phone' 
-                value={formData.phone}
-                onChange={handleInputChange} 
-                placeholder='Ingrese número de teléfono...'
-                // className={inputColor}
-              />
-              {
-                errors.phone 
-                && 
-                <p className={styles.errorMessage}>
-                  {errors.phone}
-                </p>
-              }
-            </div>
+            <label 
+              htmlFor='phone'>
+              Teléfono:
+            </label>
+            <input
+              type='text'
+              id='phone'
+              name='phone' 
+              value={formData.phone}
+              onChange={handleInputChange} 
+              placeholder='Ingrese número de teléfono...'
+              // className={inputColor}
+            />
+            {
+              errors.phone 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.phone}
+              </p>
+            }
+          </div>
           <div className={styles.inputBlock}>
-              <label 
-                htmlFor='email'>
-                Correo electrónico:
-              </label>
-              <input
-                type='text'
-                id='email'
-                name='email' 
-                value={formData.email}
-                onChange={handleInputChange} 
-                placeholder='Ingrese correo electrónico...'
-                // className={inputColor}
-              />
-              {
-                errors.email 
-                && 
-                <p className={styles.errorMessage}>
-                  {errors.email}
-                </p>
-              }
-            </div>
+            <label 
+              htmlFor='email'>
+              Correo electrónico:
+            </label>
+            <input
+              type='text'
+              id='email'
+              name='email' 
+              value={formData.email}
+              onChange={handleInputChange} 
+              placeholder='Ingrese correo electrónico...'
+              // className={inputColor}
+            />
+            {
+              errors.email 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.email}
+              </p>
+            }
+          </div>
+          <div className={styles.inputBlock}>
+            <label 
+              htmlFor='address'>
+              Domicilio:
+            </label>
+            <input
+              type='text'
+              id='address'
+              name='address' 
+              value={formData.address}
+              onChange={handleInputChange} 
+              placeholder='Ingrese domicilio...'
+              // className={inputColor}
+            />
+            {
+              errors.address 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.address}
+              </p>
+            }
+          </div>
+          <div className={styles.inputBlock}>
+            <label 
+              htmlFor='cp'>
+              Código Postal:
+            </label>
+            <input
+              type='text'
+              id='cp'
+              name='cp' 
+              value={formData.cp}
+              onChange={handleInputChange} 
+              placeholder='Ingrese código postal...'
+              // className={inputColor}
+            />
+            {
+              errors.cp 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.cp}
+              </p>
+            }
+          </div>
+          <div className={styles.inputBlock}>
+            <label 
+              htmlFor='city'>
+              Ciudad:
+            </label>
+            <input
+              type='text'
+              id='city'
+              name='city' 
+              value={formData.city}
+              onChange={handleInputChange} 
+              placeholder='Ingrese ciudad...'
+              // className={inputColor}
+            />
+            {
+              errors.city 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.city}
+              </p>
+            }
+          </div>
+          <div className={styles.inputBlock}>
+            <label 
+              htmlFor='country'>
+              País:
+            </label>
+            <input
+              type='text'
+              id='country'
+              name='country' 
+              value={formData.country}
+              onChange={handleInputChange} 
+              placeholder='Ingrese país...'
+              // className={inputColor}
+            />
+            {
+              errors.country 
+              && 
+              <p className={styles.errorMessage}>
+                {errors.country}
+              </p>
+            }
+          </div>
           <div className={styles.inputBlock}>
             <label 
               htmlFor='password'>
